@@ -2,26 +2,26 @@
 
 const Validator = require('path/validator')
 
-const result = Validator.validate({
-            [{
-                fields:[
-                  {   
-                      field: field.value,
-                      rules:{
-                          maxLength:10,
-                          minLength:4,
-                          regex:'[0-9]'
-                      }
-                  },
-                  {
-                      field:field.value,
-                      rules:{
-                          maxLength:10,
-                          minLength:4,
-                          regex:'[0-9]'
-                      }
-                  }
-              ]}
+const result = Validator.validate({ </b>
+            [{ </b>
+                fields:[ </b>
+                  {    </b>
+                      field: field.value, </b>
+                      rules:{ </b>
+                          maxLength:10, </b>
+                          minLength:4, </b>
+                          regex:'[0-9]' </b>
+                      } </b>
+                  }, </b>
+                  { </b>
+                      field:field.value, </b>
+                      rules:{ </b>
+                          maxLength:10, </b>
+                          minLength:4, </b>
+                          regex:'[0-9]' </b>
+                      } </b>
+                  } </b>
+              ]} </b>
 
 shold return a object as : {status: boolean, msg:[object(s)]}
 
