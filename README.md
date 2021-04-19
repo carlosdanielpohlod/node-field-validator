@@ -4,27 +4,25 @@ const Validator = require('path/validator')
 
 const result = Validator.validate({ </b>
 
-            [{ </b>
-                fields:[ </b>
-                  {    </b>
-                      value: data.value, </b>
-                      rules:{ </b>
-                          maxLength:10, </b>
-                          minLength:4, </b>
-                          regex:'[0-9]' </b>
-                      } </b>
-                  }, </b>
-                  { </b>
-                      value:data.value, </b>
-                      rules:{ </b>
-                          maxLength:10, </b>
-                          minLength:4, </b>
-                          regex:'[0-9]' </b>
-                      } </b>
-                  } </b>
-              ]}
-              
-              </b>
+            [{
+                fields:[ 
+                  {    
+                      value: data.value, 
+                      rules:{ 
+                          maxLength:10, 
+                          minLength:4, 
+                          regex:'[0-9]' 
+                      } 
+                  }, 
+                  { 
+                      value:data.value, 
+                      rules:{ 
+                          maxLength:20, 
+                          minLength:3, 
+                          regex:"^(0|([1-9][0-9]*))(\\.[0-9]+)?$" 
+                      } 
+                  } 
+            ]}
 
 value: the field value
 rules: validation rules (maxLength, minLength, regex)
