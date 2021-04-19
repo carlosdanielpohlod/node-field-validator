@@ -1,10 +1,10 @@
 <h2> Usage example: </h2>
 
-const Validator = require('path/validator')
+            const Validator = require('path/validator')
 
-const result = Validator.validate({ </b>
-
-            [{
+            const result = Validator.validate(
+            {[
+               {
                 fields:[ 
                   {    
                       value: data.value, 
