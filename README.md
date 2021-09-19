@@ -30,5 +30,5 @@ rules: validation rules (maxLength, minLength, regex)
 shold return a object as : { status: boolean, msg:[object(s)] }
 
 The msg field contains the error messages.
-By: Me
-<b> help to improve the project </b>
+
+<b> help me to improve this project </b>
